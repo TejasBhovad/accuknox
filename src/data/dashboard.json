@@ -1,0 +1,88 @@
+{
+  "categories": [
+    {
+      "id": "cspm",
+      "name": "CSPM Executive Dashboard",
+      "tabLabel": "CSPM",
+      "widgets": [
+        {
+          "id": "cloud-accounts",
+          "name": "Cloud Accounts",
+          "type": "donut",
+          "totalLabel": "2 Total",
+          "data": [
+            { "label": "Connected", "value": 2, "color": "#0046FF" },
+            { "label": "Not Connected", "value": 2, "color": "#C7D4FF" }
+          ]
+        },
+        {
+          "id": "cloud-account-risk",
+          "name": "Cloud Account Risk Assessment",
+          "type": "donut",
+          "totalLabel": "9659 Total",
+          "data": [
+            { "label": "Failed", "value": 1689, "color": "#C80019" },
+            { "label": "Warning", "value": 681, "color": "#F59E0B" },
+            { "label": "Not available", "value": 36, "color": "#9CA3AF" },
+            { "label": "Passed", "value": 7253, "color": "#16A55C" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cwpp",
+      "name": "CWPP Dashboard:",
+      "tabLabel": "CWPP",
+      "widgets": [
+        {
+          "id": "namespace-alerts",
+          "name": "Top 5 Namespace Specific Alerts",
+          "type": "empty",
+          "text": "No Graph data available!"
+        },
+        {
+          "id": "workload-alerts",
+          "name": "Workload Alerts",
+          "type": "empty",
+          "text": "No Graph data available!"
+        }
+      ]
+    },
+    {
+      "id": "registry",
+      "name": "Registry Scan",
+      "tabLabel": "Image",
+      "widgets": [
+        {
+          "id": "image-risk",
+          "name": "Image Risk Assessment",
+          "type": "stackedBar",
+          "totalLabel": "1470 Total Vulnerabilities",
+          "data": [
+            { "label": "Critical", "value": 9, "color": "#C80019" },
+            { "label": "High", "value": 150, "color": "#E11D48" },
+            { "label": "Medium", "value": 480, "color": "#F59E0B" },
+            { "label": "Low", "value": 531, "color": "#FDE68A" },
+            { "label": "Unknown", "value": 300, "color": "#D1D5DB" }
+          ]
+        },
+        {
+          "id": "image-security",
+          "name": "Image Security Issues",
+          "type": "stackedBar",
+          "totalLabel": "2 Total Images",
+          "data": [
+            { "label": "Critical", "value": 2, "color": "#C80019" },
+            { "label": "High", "value": 2, "color": "#E11D48" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ticket",
+      "name": "Ticket Dashboard",
+      "tabLabel": "Ticket",
+      "widgets": []
+    }
+  ]
+}
